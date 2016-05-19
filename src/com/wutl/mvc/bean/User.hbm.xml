@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-4 17:00:11 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.wutl.mvc.bean.User" table="USER" lazy="false">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity"/>
+        </id>
+        <property name="phone" type="java.lang.String">
+            <column name="PHONE" />
+        </property>
+        <property name="address" type="java.lang.String">
+            <column name="ADDRESS" />
+        </property>
+        <property name="email" type="java.lang.String">
+            <column name="EMAIL" />
+        </property>
+        <property name="userKey" type="java.lang.String">
+            <column name="USERKEY" />
+        </property>
+        <property name="browser" type="java.lang.String">
+            <column name="BROWSER" />
+        </property>
+        <property name="idcard" type="java.lang.String">
+            <column name="IDCARD" />
+        </property>
+        <property name="userName" type="java.lang.String">
+            <column name="USERNAME" />
+        </property>
+        <property name="cardno" type="java.lang.String">
+            <column name="CARDNO" />
+        </property>
+        <property name="realName" type="java.lang.String">
+            <column name="REALNAME" />
+        </property>
+        <property name="password" type="java.lang.String">
+            <column name="PASSWORD" />
+        </property>
+        <property name="isvalid" type="java.lang.String">
+            <column name="ISVALID" />
+        </property>
+         <property name="createDate" type="java.util.Date">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createBy" type="java.lang.String">
+            <column name="CREATEBY" />
+        </property>
+        <property name="createName" type="java.lang.String">
+            <column name="CREATENAME" />
+        </property>
+        <property name="updateDate" type="java.util.Date">
+            <column name="UPDATEDATE" />
+        </property>
+        <property name="updateBy" type="java.lang.String">
+            <column name="UPDATEBY" />
+        </property>
+        <property name="updateName" type="java.lang.String">
+            <column name="UPDATENAME" />
+        </property>
+         <property name="img" type="java.lang.String">
+            <column name="IMG" />
+        </property>
+    </class>
+</hibernate-mapping>
