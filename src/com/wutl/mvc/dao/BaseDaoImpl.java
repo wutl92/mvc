@@ -97,6 +97,8 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 
 	@Override
 	public T get(String id) {
+		if(Tools.isEmpty(id))
+			return null;
 		Object object = getSession().get(clazz,new Integer(id));
 		return (T) object;
 	}
