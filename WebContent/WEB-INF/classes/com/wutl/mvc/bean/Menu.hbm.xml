@@ -1,0 +1,69 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<!-- Generated 2016-5-4 17:00:11 by Hibernate Tools 3.5.0.Final -->
+<hibernate-mapping>
+    <class name="com.wutl.mvc.bean.Menu"  table="MENU" lazy="false">
+        <id name="id" type="java.lang.Integer">
+            <column name="ID" />
+            <generator class="identity"></generator>
+        </id>
+        <property name="menuParent" type="java.lang.Integer" access="field">
+            <column name="MENUPARENT" />
+        </property>
+        <property name="createTime" type="java.util.Date">
+            <column name="CREATETIME" />
+        </property>
+        <property name="sort" type="java.lang.Integer">
+            <column name="SORT" />
+        </property>
+        <property name="img" type="java.lang.String">
+            <column name="IMG" />
+        </property>
+        <property name="menuLevel" type="java.lang.Integer">
+            <column name="MENULEVEL" />
+        </property>
+        <property name="url" type="java.lang.String">
+            <column name="URL" />
+        </property>
+        <property name="menuPriority" type="java.lang.Integer">
+            <column name="MENUPRIORITY" />
+        </property>
+        <property name="action" type="java.lang.String">
+            <column name="ACTION" />
+        </property>
+        <property name="target" type="java.lang.String">
+            <column name="TARGET" />
+        </property>
+        <property name="menuType" type="java.lang.Integer">
+            <column name="MENUTYPE" />
+        </property>
+        <property name="methodName" type="java.lang.String">
+            <column name="METHODNAME" />
+        </property>
+        <property name="menuPath" type="java.lang.String">
+            <column name="MENUPATH" />
+        </property>
+        <property name="menuName" type="java.lang.String">
+            <column name="MENUNAME" />
+        </property>
+         <property name="createDate" type="java.util.Date">
+            <column name="CREATEDATE" />
+        </property>
+        <property name="createBy" type="java.lang.String">
+            <column name="CREATEBY" />
+        </property>
+        <property name="createName" type="java.lang.String">
+            <column name="CREATENAME" />
+        </property>
+        <property name="updateDate" type="java.util.Date">
+            <column name="UPDATEDATE" />
+        </property>
+        <property name="updateBy" type="java.lang.String">
+            <column name="UPDATEBY" />
+        </property>
+        <property name="updateName" type="java.lang.String">
+            <column name="UPDATENAME" />
+        </property>
+    </class>
+</hibernate-mapping>
