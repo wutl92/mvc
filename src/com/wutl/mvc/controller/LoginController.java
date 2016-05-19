@@ -56,4 +56,11 @@ public class LoginController {
 	public ModelAndView goLogin(){
 		return new ModelAndView("system/login");
 	}
+
+	@RequestMapping(params="goback")
+	public ModelAndView goback(HttpSession session){
+		UserManager.getOnlineUsers().remove(session.getId());//去除在线用户
+		session.invalidate();//消除当前Session
+		return new ModelAndView("redirect:login.do?go");
+	}
 }

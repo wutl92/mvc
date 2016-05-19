@@ -11,7 +11,7 @@
 </head>
 <body class="easyui-layout" data-options="fit:true">   
 		<div id="main" class="easyui-layout" data-options="fit:true">   
-          <div data-options="region:'west',collapsed:true,title:'个人信息',split:true" style="width:300px;"></div>  
+          <div id = "west" data-options="region:'west',collapsed:true,title:'个人信息',split:true" style="width:300px;"></div>
           <div data-options="region:'center',href:'user.do?goAdd',border:true" ></div>   
         </div>   
         <script type="text/javascript">

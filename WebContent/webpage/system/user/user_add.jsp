@@ -241,20 +241,23 @@
 					handler : function() {
 						var selRows = $('#test').datagrid('getSelections');
 						if (selRows.length == 0) {
-							alert("请选中一行,再进行操作！");
+							rightDownMsg("请选中一行,再进行操作！");
 							return;
 						}
 						if (selRows.length > 1) {
-							alert("不支持多行操作！");
+							rightDownMsg("不支持多行操作！");
 							return;
 						}
 						var selObj = $('#test').datagrid('getSelected');
-						$('#userName3').val(selObj.userName);
-						$('#password3').val(selObj.password);
-						$('#telphone3').val(selObj.telphone);
-						$('#email3').val(selObj.email);
-						$('#add').css("display", "block");
-						upShow();
+						var parent = window.parent;
+						var west = parent.document.getElementById("west");
+						var main = parent.document.getElementById("main");
+						west = $(west);
+						$(main).layout();
+						$(main).layout('expand','west');
+						$(west).panel({
+							href:'user.do?detail&id='+selObj.id,
+						});
 					}
 				}, {
 					id : 'btndelete',

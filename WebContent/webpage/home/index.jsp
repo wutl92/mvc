@@ -80,7 +80,7 @@ a:active {
 		<div class="cs-north-bg">
 			<div style="float:left;color:#fff;font-size:22px;font-weight:bold;text-decoration:none;"></div>
 			<div style="margin:10px 10px 0 0;float:right;color:black;color:#fff;font-size:12px;font-weight:bold;text-decoration:none;">
-				&nbsp;您好,欢迎使用！&nbsp;&nbsp;<a style="color:#fff" href="javascript:void(0)" onclick="changePws()">密码修改</a>&nbsp;&nbsp;&nbsp;<a style="color:#fff" href="UbloginOut" >注销</a></p>
+				&nbsp;您好,欢迎使用！&nbsp;&nbsp;<a style="color:#fff" href="javascript:void(0)" onclick="changePws()">密码修改</a>&nbsp;&nbsp;&nbsp;<a style="color:#fff" href="login.do?goback" >注销</a></p>
 				时间：<span  id="DisplayTime"></span>
 			</div>
 		</div>

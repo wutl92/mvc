@@ -97,4 +97,20 @@ public class UserController {
 	public ModelAndView goList(){
 		return new ModelAndView("system/user/user_list");
 	}
+
+
+
+    /**
+	 * 根据Id获取详细信息
+	 * @param id
+	 * @return
+     */
+	@RequestMapping(params = "detail")
+	public ModelAndView goDetail(String id){
+		ModelAndView md = new ModelAndView();
+		User user = userService.get(id);
+        md.addObject("user",user);
+        md.setViewName("system/user/detail");
+        return md;
+	}
 }
