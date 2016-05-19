@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE taglib PUBLIC "-//Sun Microsystems, Inc.//DTD JSP Tag Library 1.2//EN"
+                        "http://java.sun.com/dtd/web-jsptaglibrary_1_2.dtd">
+<taglib>
+	<tlib-version>1.0</tlib-version>
+	<jsp-version>1.2</jsp-version>
+	<short-name>wu</short-name>
+	<uri>/mytags</uri>
+	<display-name>"自定义标签"</display-name>
+	<tag>
+		<name>importFile</name><!-- 标签名字 -->
+		<tag-class>com.wutl.mvc.common.mytags.PageScriptTag</tag-class>
+		<body-content>empty</body-content>
+		<description>引入静态文件</description>
+		<attribute><!-- 属性名字 -->
+			<name>include</name>
+			<required>true</required>
+			<description>引入类型“，”隔开</description>
+		</attribute>		
+	</tag>
+	
+	<tag>
+		<name>menu</name><!-- 标签名字 -->
+		<tag-class>com.wutl.mvc.common.mytags.PageMenuTags</tag-class>
+		<body-content>empty</body-content>
+		<description>菜单</description>
+	</tag>
+</taglib>
