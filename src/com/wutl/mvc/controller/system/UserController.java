@@ -89,7 +89,7 @@ public class UserController {
 	@ResponseBody
 	public List<User> getDatagrid(Page page) {
 		Condition con = new Condition();
-		con.setPage(page);
+		con.setPages(page);
 		List<User> list = userService.findList(con);
 		return list;
 	}

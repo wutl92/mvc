@@ -49,8 +49,5 @@ public class Role  extends BaseInfo{
 		this.roleDesc = roleDesc;
 		this.isSupper = isSupper;
 	}
-
-	public Role() {
-
-	}
+	public Role(){}
 }

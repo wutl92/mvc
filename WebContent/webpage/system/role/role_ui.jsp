@@ -6,15 +6,14 @@
 <head>
 <wu:importFile include="easyui"/>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>人员管理</title>
+<title>角色管理</title>
 
 </head>
 <body class="easyui-layout" data-options="fit:true">   
 		<div id="main" class="easyui-layout" data-options="fit:true">
-            <div data-options="region:'center',href:'user.do?list',border:true" ></div>
+            <div data-options="region:'center',href:'role.do?list',border:true" ></div>
             <div id = "east" data-options="region:'east',collapsed:true,title:'权限分配',split:true" style="width:300px;"></div>
         </div>
-
         <script type="text/javascript">
 			$(function(){
 			

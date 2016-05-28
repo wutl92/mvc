@@ -15,11 +15,11 @@ package com.wutl.mvc.tool;
 public class Condition {
 	private Page pages;//分页对象
 
-	public Page getPage() {
+	public Page getPages() {
 		return pages;
 	}
 	
-	public void setPage(Page page) {
-		this.pages = page;
+	public void setPages(Page pages) {
+		this.pages = pages;
 	}
 }

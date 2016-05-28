@@ -16,6 +16,9 @@ import com.wutl.mvc.bean.User;
 import com.wutl.mvc.common.system.UserManager;
 import com.wutl.mvc.tool.Tools;
 
+import java.io.File;
+import java.io.FileOutputStream;
+
 /**
  * <pre>
  * 名称: 登录拦截器

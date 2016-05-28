@@ -1,5 +1,8 @@
 package mvc.test;
 
+import com.mysql.jdbc.log.Log;
+import com.sun.javaws.Main;
+import com.sun.org.apache.bcel.internal.generic.AALOAD;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -16,8 +19,8 @@ public class TestSpring {
 	
 	@Autowired
 	UserDao userDao;
-	@Test
-	public void getSpring(){
+	//@Test
+	public void getSpring() {
 		/*Session openSession = sessionFactory.openSession();
 		System.out.println(openSession);
 		User user = new User();
@@ -27,5 +30,8 @@ public class TestSpring {
 		transaction.commit();
 		openSession.close();*/
 		User user = new User(11, "userName", "realName", "nb", "userKey", "password", "password", "1", "001");
+
+
 	}
 }
+

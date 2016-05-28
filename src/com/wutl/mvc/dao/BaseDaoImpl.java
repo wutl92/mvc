@@ -87,7 +87,7 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 		//如果条件为空 查询所有
 		Query query = getSession().createQuery("From " + clazz.getSimpleName());
 		if(!Tools.isEmpty(condition)){
-			Page page = condition.getPage();
+			Page page = condition.getPages();
 			query.setFirstResult(page.getStart());
 			query.setMaxResults(page.getEnd());
 		}
