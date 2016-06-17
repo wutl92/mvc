@@ -13,6 +13,15 @@
     <title>角色列表</title>
 </head>
 <body>
-
+<div  style="width: 100%;height:100%">
+    <table id="roleTab" >
+    </table>
+    <div id="toolbar">
+        <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-edit',plain:true">录入</a>
+        <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-help',plain:true">编辑</a>
+        <a href="#" class="easyui-linkbutton" data-options="iconCls:'icon-help',plain:true">删除</a>
+    </div>
+</div>
+<script src="webpage/system/role/role.js" type="text/javascript"></script>
 </body>
 </html>

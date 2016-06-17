@@ -2,6 +2,9 @@ package com.wutl.mvc.service.system;
 
 import com.wutl.mvc.bean.Role;
 import com.wutl.mvc.service.BaseService;
+import com.wutl.mvc.tool.Condition;
+
+import java.util.List;
 
 /**
  * <pre>
@@ -15,4 +18,7 @@ import com.wutl.mvc.service.BaseService;
 
 public interface RoleService  extends BaseService<Role> {
 
+    List<Role> getRoleByLimit(Condition condition);
+
+    long getRoleCount();
 }

@@ -32,20 +32,17 @@ public class LoginInterceptor extends HandlerInterceptorAdapter  {
 	@Override
 	public void afterCompletion(HttpServletRequest request, HttpServletResponse response, Object handler, Exception ex)
 			throws Exception {
-		System.out.println("LoginInterceptor.afterCompletion()");
 	}
 
 	@Override
 	public void afterConcurrentHandlingStarted(HttpServletRequest request, HttpServletResponse response, Object handler)
 			throws Exception {
-		System.out.println("LoginInterceptor.afterConcurrentHandlingStarted()");
 		super.afterConcurrentHandlingStarted(request, response, handler);
 	}
 
 	@Override
 	public void postHandle(HttpServletRequest request, HttpServletResponse response, Object handler,
 			ModelAndView modelAndView) throws Exception {
-		System.out.println("LoginInterceptor.postHandle()");
 		super.postHandle(request, response, handler, modelAndView);
 	}
 
@@ -62,7 +59,6 @@ public class LoginInterceptor extends HandlerInterceptorAdapter  {
 			boolean flag = Tools.isEmpty(onlineUser)? false : true;
 			if(!flag){
 				response.sendRedirect("login.do?go");
-				System.out.println(response);
 			}
 			return flag;
 		}

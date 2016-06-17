@@ -11,7 +11,7 @@
 </head>
 <body class="easyui-layout" data-options="fit:true">   
 		<div id="main" class="easyui-layout" data-options="fit:true">
-            <div data-options="region:'center',href:'user.do?list',border:true" ></div>
+            <div data-options="region:'center',href:'role.do?list',border:true" ></div>
             <div id = "east" data-options="region:'east',collapsed:true,title:'权限分配',split:true" style="width:300px;"></div>
         </div>
 

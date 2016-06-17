@@ -102,4 +102,11 @@ public class BaseDaoImpl<T> implements BaseDao<T> {
 		Object object = getSession().get(clazz,new Integer(id));
 		return (T) object;
 	}
+
+	@Override
+	public long getCount() {
+		Query query = getSession().createQuery("select count(*) from " + clazz.getSimpleName());
+		Long maxResults = (Long) query.list().get(0);
+		return maxResults;
+	}
 }
