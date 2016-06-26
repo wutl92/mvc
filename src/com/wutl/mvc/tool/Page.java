@@ -14,6 +14,12 @@ package com.wutl.mvc.tool;
  */
 
 public class Page {
+
+	public Page(int page, int rows) {
+		this.page = page;
+		this.rows = rows;
+	}
+
 	/**
 	 * 当前页数
 	 */

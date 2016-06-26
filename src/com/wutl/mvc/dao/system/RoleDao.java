@@ -15,4 +15,5 @@ import com.wutl.mvc.dao.BaseDao;
 
 public interface RoleDao  extends BaseDao<Role> {
 
+
 }

@@ -40,4 +40,6 @@ public interface BaseDao<T> {
 	public List<T> findList(Condition condition);
 	
 	public T  get(String id);
+
+	long getCount();
 }
