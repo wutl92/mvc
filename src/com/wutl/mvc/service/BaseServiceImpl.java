@@ -21,6 +21,7 @@ import com.wutl.mvc.bean.User;
 import com.wutl.mvc.dao.BaseDao;
 import com.wutl.mvc.tool.Condition;
 import com.wutl.mvc.tool.Tools;
+import org.springframework.stereotype.Service;
 
 /**
  * <pre>

@@ -30,7 +30,7 @@ public class RoleServiceImpl extends BaseServiceImpl<Role> implements RoleServic
     @Override
     public List<Role> getRoleByLimit(Condition condition) {
         System.out.println(".............");
-        log.info(condition.getPage()+"");
+        log.info(condition.getPages()+"");
         List<Role> list = roleDao.findList(condition);
         return list;
     }

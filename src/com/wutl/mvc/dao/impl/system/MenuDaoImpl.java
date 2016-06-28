@@ -6,6 +6,7 @@ package com.wutl.mvc.dao.impl.system;
 import java.util.ArrayList;
 import java.util.List;
 
+import org.springframework.stereotype.Repository;
 import org.springframework.stereotype.Service;
 
 import com.wutl.mvc.bean.Menu;
@@ -22,7 +23,7 @@ import com.wutl.mvc.dao.system.MenuDao;
  * </pre>
  */
 @SuppressWarnings("all")
-@Service
+@Repository
 public class MenuDaoImpl extends BaseDaoImpl<Menu> implements MenuDao {
 	
 	@Override

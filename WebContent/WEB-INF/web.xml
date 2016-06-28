@@ -41,9 +41,16 @@
     </filter>
     <filter-mapping>
         <filter-name>encodingFilter</filter-name>
-        <url-pattern>/*</url-pattern>
+        <url-pattern>/</url-pattern>
     </filter-mapping>
-    
+	<servlet>
+		<servlet-name>word</servlet-name>
+		<servlet-class>com.wutl.mvc.wordTest.WordServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>word</servlet-name>
+		<url-pattern>/wordServlet</url-pattern>
+	</servlet-mapping>
   <welcome-file-list>
      <welcome-file>login.do?go</welcome-file>
   	 <welcome-file>webpage/system/login.jsp</welcome-file>

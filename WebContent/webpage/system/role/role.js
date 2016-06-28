@@ -176,27 +176,7 @@ function loadDatagrid() {
                     href: 'role.do?detail&id=' + selObj.id,
                 });
             }
-        }, {
-            id: 'btndelete',
-            text: '删除',
-            iconCls: 'icon-remove',
-            handler: function () {
-                var selRows = $('#role').datagrid('getSelections');
-                if (selRows.length == 0) {
-                    rightDownMsg("请选中一行,再进行操作！");
-                    return;
-                }
-                if (selRows.length > 1) {
-                    rightDownMsg("不支持多行操作！");
-                    return;
-                }
-                var selObj = $('#role').datagrid('getSelected');
-                $.post("role.do?delRole", 'ids=' + selObj.id, function () {
-                    rightDownMsg("提示消息", "删除成功！");
-                    loadDatagrid();
-                });
-            }
-        }, {
+        },  {
             id: 'btnDeleteMore',
             text: '批量删除',
             iconCls: 'icon-remove',
@@ -214,7 +194,8 @@ function loadDatagrid() {
                     rightDownMsg("请选择一条记录！");
                     return;
                 }
-                $.post("role.do?delUser", 'ids=' + ids, function (v) {
+                $.post("role.do?delRole", 'ids=' + ids, function (v) {
+                    console.log(v);
                     $.messager.alert("提示消息", "删除成功！");
                     loadDatagrid();
                 });

@@ -32,17 +32,25 @@ public class RoleController {
 
     /**
      * 增加用户
-     * @param id
      */
     @RequestMapping(params = "doAdd")
     public void addRole(Role role){
-
         roleService.save(role);
     }
 
 
-    @RequestMapping(params = "del")
-    public String deleteRole(String id){
+    @RequestMapping(params = "delRole")
+    @ResponseBody
+    public String deleteRole(String ids){
+        String[] arrId = Tools.splitStringByOp(ids,",");
+        String flag = "false";
+        for(String id : arrId){
+            flag =  delRole(id);
+        }
+        return flag;
+    }
+
+    private String delRole(String id) {
         Role role = roleService.get(id);
         if(Tools.isEmpty(role)){
             return "false";
@@ -51,6 +59,7 @@ public class RoleController {
             return "true";
         }
     }
+
     @RequestMapping(params = "go")
     public ModelAndView goRole(){
         System.out.println(".............");

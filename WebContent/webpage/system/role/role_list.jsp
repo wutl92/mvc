@@ -10,6 +10,7 @@
 <html>
 <head>
 <wu:importFile include="easyui"/>
+
     <title>角色列表</title>
 </head>
 <body class="easyui-layout">
@@ -50,7 +51,6 @@
             </table>
         </form>
     </div>
-<script src="webpage/system/role/role.js">
-</script>
+<script src="webpage/system/role/role.js"></script>
 </body>
 </html>

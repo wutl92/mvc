@@ -15,13 +15,6 @@ import javax.xml.transform.dom.DOMSource;
 import javax.xml.transform.stream.StreamResult;
 
 import org.apache.log4j.chainsaw.Main;
-import org.apache.poi.hwpf.HWPFDocument;
-import org.apache.poi.hwpf.converter.PicturesManager;
-import org.apache.poi.hwpf.converter.WordToHtmlConverter;
-import org.apache.poi.hwpf.extractor.WordExtractor;
-import org.apache.poi.hwpf.usermodel.Picture;
-import org.apache.poi.hwpf.usermodel.PictureType;
-import org.apache.poi.util.SystemOutLogger;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Scope;
 import org.springframework.stereotype.Controller;
@@ -82,22 +75,22 @@ public class LoginController {
 		session.invalidate();//消除当前Session
 		return new ModelAndView("redirect:login.do?go");
 	}
-	@RequestMapping(params="d1")
+	/*@RequestMapping(params="d1")
 	public void demo(HttpServletResponse response) throws IOException, TransformerException, ParserConfigurationException {
-		/*File file  = new File("E://test//吴同立--转正申请表.doc");
+		*//*File file  = new File("E://test//吴同立--转正申请表.doc");
 		FileInputStream fin = new FileInputStream(file);
 		BufferedInputStream bis = new BufferedInputStream(fin);
 		String bodyText = null;
 		WordExtractor ex = new WordExtractor(bis);
 		response.setCharacterEncoding("gbk");
 		bodyText = ex.getText();
-		response.getWriter().write(bodyText);*/
+		response.getWriter().write(bodyText);*//*
 		response.setCharacterEncoding("UTF-8");
 		convert2Html("E://test//软件详细设计说明书.doc",response);
-	}
+	}*/
 
 
-	public static void convert2Html(String fileName,HttpServletResponse resp)
+/*	public static void convert2Html(String fileName,HttpServletResponse resp)
 			throws TransformerException, IOException,
 			ParserConfigurationException {
 		HWPFDocument wordDocument = new HWPFDocument(new FileInputStream(fileName));//WordToHtmlUtils.loadDoc(new FileInputStream(inputFile));
@@ -142,5 +135,5 @@ public class LoginController {
 		out.close();
 		System.out.println(new String(out.toByteArray()));
 		resp.getWriter().write(new String(out.toByteArray(),"utf-8"));
-}
+}*/
 }

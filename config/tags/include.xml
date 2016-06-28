@@ -14,7 +14,7 @@
 		<file>js/easyui/themes/icon.css</file>
 		<file>js/easyui/themes/default/easyui.css</file>
 		<file>js/easyui/locale/zh-cn.js</file>
-		<!-- <file>js/easyui/outlook.js</file> -->
+		<file>js/tools/message.js</file>
 	</type>
 	
 </include>
